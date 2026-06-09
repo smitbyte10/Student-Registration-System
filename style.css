@@ -1,0 +1,150 @@
+/* Main css file */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#0f172a;   
+ padding:30px;
+}
+
+.container{
+    width:95vw !important;
+    max-width:1400px !important;
+    margin:30px auto !important;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+.container h2{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:30px;
+    font-size:36px;
+}
+
+input{
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    border:2px solid #e5e7eb;
+    border-radius:12px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+input:focus{
+    outline:none;
+    border-color:#2563eb;
+    box-shadow:0 0 10px rgba(37,99,235,0.3);
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(37,99,235,0.4);
+}
+
+a{
+    display:block;
+    text-align:center;
+    margin-top:20px;
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:hover{
+    color:#1d4ed8;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.student-table{
+    width:100%;
+    min-width:900px;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.student-table th{
+    background:#2563eb;
+    color:white;
+    padding:15px;
+}
+
+.student-table td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+
+.student-table tr:hover{
+    background:#f8fafc;
+}
+
+.edit-btn{
+    background:#10b981;
+    color:white;
+    padding:8px 12px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+    padding:8px 12px;
+    border-radius:8px;
+    text-decoration:none;
+    margin-left:5px;
+}
+
+.logout-btn{
+    background:#ef4444;
+    color:white;
+    padding:10px 15px;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+form{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+form input{
+    flex:1;
+}
+
+form button{
+    width:150px;
+}
